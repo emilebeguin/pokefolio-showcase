@@ -96,6 +96,9 @@
     }
     .download & {
         flex-wrap: wrap;
+        &--left {
+            flex-direction: unset;
+        }
     }
     .download &,
     .info-tech &{ 
