@@ -1,0 +1,20 @@
+// HEADER POKEBALL SUR LA HOME
+.header-pokeball{
+    // margin-top: $mrg10-elastic;
+    .pokeball{
+        margin: 0 auto;
+        background: url('../img/Header.png') top / cover;
+        @media screen and (max-width: $tablet) {
+            padding: 0 20px;
+        }
+        .pokeball-inside{
+            padding-top: $elastic-90;
+            @media screen and (max-width: $tablet) {
+                padding-top: $elastic-60;
+            }
+        }
+        img[alt="Theme thumbnail"]{
+            width: 70%;
+        }
+    }
+}
