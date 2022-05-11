@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.page-doc {
+  
+  text-align: left;
+
+
+  main {
+    display: flex;
+    flex-direction: row;
+    
+    padding-top: 100px;
+  }
+
+  // SIDE MENU
+  aside {
+    position: relative;
+    left: 0;
+    top: 10%;
+    margin-left: 20px;
+    display: block;
+    width: 400px;
+
+    nav {
+      position: sticky;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // INTRO DOCUMENTATION
+  .doc-intro {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  .__img {
+    width: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // ONE SUBJECT BOX
+  .__onesubject, .doc-intro {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding-bottom: 30px;
+
+    h3, h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-right: 20%;
+    }
+
+    .__img {
+      width: 40%;
+    }
+
+    .__txt {
+      width: 60%;
+      margin: 20px;
+    }
+  }
+
+  .__title {
+    padding-top: 50px;
+    margin: 20px;
+  }
+
+  // CODE PART
+  pre {
+    background-color: $color_base_dark;
+    color: white;
+    width: 150%;
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+}

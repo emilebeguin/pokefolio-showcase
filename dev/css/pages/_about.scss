@@ -1,0 +1,268 @@
+.page-about {
+
+  h2 {
+    padding-bottom: 15px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: left;
+    justify-content: center;
+    padding-bottom: 200px;
+    width: 100%;
+
+    @include abt-1 {
+      flex-wrap: wrap;
+    }
+
+    @include abt-2 {
+      flex-wrap: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+    }
+
+    .contributors {
+      width: 10%;
+      text-align: center;
+      margin-left: 300px;
+      display: grid;
+      grid-template-columns: 1fr;
+      
+
+      .__contributors {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include abt-4 {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+
+      @include abt-2 {
+        margin-left: 0px;
+      }
+
+      @include abt-4 {
+        width: 80%;
+      }
+
+      .singe-contr {
+        padding-bottom: 20px;
+      }
+
+      .__img {
+        width: 100px;
+        margin: 10px auto;
+        border-radius: 100%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
+    .about {
+      width: 40%;
+      margin-left: 200px;
+      margin-right: 200px;
+
+      // @include abt-1 {
+      //   width: 60%;
+      // }
+
+      // @include abt-2 {
+      //   margin-left: 0px;
+      //   margin-right: 0px;
+      // }
+
+      .__txt {
+        padding-bottom: 50px;
+          p {
+            margin: 10px 0 10px 0;
+          
+          }
+      }
+
+      .__logos {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+      }
+
+      @include abt-3 {
+        .__logos {
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-items: center;
+          gap: 2rem;
+        }
+      }
+
+      .__single-logo {
+        width: 200px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .contact {
+      width: 40%;
+      margin-left: 0px;
+      margin-right: 500px;
+
+      // @include abt-2 {
+      //   width: 50%;
+      //   margin-right: 0px;
+      // }
+
+      @include abt-1 {
+        width: 50%;
+        margin-right: 0px;
+        text-align: center;
+      }
+
+      .txtbox {
+        padding-bottom: 25px;
+      }
+    }
+  }
+
+  .__addresses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+
+    .__txt {
+      padding-left: 10px;
+    }
+
+    .__singlebox {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      align-items: center;
+      width: 50%;
+
+      @include abt-4 {
+        width: 100%;
+        align-content: center;
+        justify-items: start;
+      }
+    }
+  }
+
+    .__theform {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 15px;
+      
+
+      .__formdiv {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        label {
+          padding-bottom: 7px;
+          font-weight: bold;
+        }
+
+        input {
+          border: solid 1px black;
+          box-shadow: 0px 0px 85px -75px rgba(0,0,0,1) inset;
+          
+
+          &::placeholder {
+            padding-left: 15px;
+            font-style: italic;
+            color: black;
+          }
+        }
+
+        textarea {
+          border: solid 1px black;
+          box-shadow: 0px 0px 85px -75px rgba(0,0,0,1) inset;
+
+          &::placeholder {
+            padding-top: 15px;
+            padding-left: 15px;
+            font-style: italic;
+            color: black;
+          }
+        }
+      }
+
+      .__highform {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+      }
+
+      .--inputsize {
+        height: 65px;
+      }
+
+      .--inputs {
+        height: 50px;
+      }
+
+      .__name {
+        width: calc(100% / 3);
+      }
+
+      .__surname {
+        width: calc(100% / 3);
+        margin: 0 5px;
+      }
+
+      .__email {
+        width: calc(100% / 3);
+      }
+
+      .__subject {
+        width: 100%;
+      }
+
+      .__message {
+        width: 100%;
+      }
+    }
+}
+
+.--top-padding {
+  padding-top: 200px;
+
+  @include abt-4 {
+    padding-top: 50px;
+  }
+}
+
+.--top-padding-less {
+  padding-top: 150px;
+}
+
+.--abt-wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// ----------------------
+// SOME RESPONSIVE
+
+@include abt-1 {
+  .--abt-wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+

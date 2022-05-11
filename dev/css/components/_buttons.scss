@@ -1,0 +1,19 @@
+.btn{
+    text-transform: uppercase;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: $color_primary_b;
+    background: $color_primary_y;
+    &:hover{
+        color: $color_primary_y;
+        background: $color_primary_b;
+        border-radius: 0;
+        border: 2px solid $color_primary_y;
+    }
+    // .bg-blue &{
+        
+        // }
+    }
+    

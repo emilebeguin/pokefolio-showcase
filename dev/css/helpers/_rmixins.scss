@@ -1,0 +1,69 @@
+// responsive
+$mobile:764px;
+$tablet: 990px;
+$laptop: 1240px;
+$desktop: 1920px;
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+      @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+      @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+      @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+      @content;
+  }
+}
+
+// special responsive
+$doc1 : 1593px;
+
+@mixin desktop {
+  @media screen and (max-width: $doc1) {
+      @content;
+  }
+}
+
+// about responsive
+$about1 : 2355px;
+$about2 : 1600px;
+$about3 : 1270px;
+$about4 : 817px;
+$special : 2355px;
+
+@mixin abt-1 {
+  @media screen and (max-width: $about1) {
+      @content;
+  }
+}
+
+@mixin abt-2 {
+  @media screen and (max-width: $about2) {
+      @content;
+  }
+}
+
+@mixin abt-3 {
+  @media screen and (max-width: $about3) {
+      @content;
+  }
+}
+
+@mixin abt-4 {
+  @media screen and (max-width: $about4) {
+      @content;
+  }
+}
