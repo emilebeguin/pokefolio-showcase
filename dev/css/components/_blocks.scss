@@ -1,0 +1,123 @@
+.block-lr{
+    $block: &; // le bloc devient une variable (parce qu'il y a des blocs dans des blocs)
+    display: flex;
+    justify-content: center;
+    img{
+        width: 100%;
+        &.portrait {
+            max-width: 100px;
+        }
+    }
+    &__img {
+        &:not(.info-tech &){
+            width: 100%;
+        }
+        .info-tech &{
+            height: 60px; // img hérite de ceci
+            width: 60px;  // img hérite de ceci
+            background: $color_primary_y;
+            border-radius: 999px;
+        }
+    }
+    &__txt{
+        text-align: left;
+        width: 80%;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            // le texte se met à droite au palier tablette
+            .advantages .block-lr:nth-of-type(even) & {
+                text-align: right;
+            }
+        }
+    }
+    
+    // inversion de l'ordre des blocs
+    &--left{
+        flex-direction: row-reverse;
+        // l'ordre est réinversé dans advantages
+        @media screen and (max-width: $tablet) {
+            .advantages & {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    // bloc gauche
+    &-left{
+        width: 50%;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+        .start-testimonials & {
+            background: url('../img/LancezVousBox.png') center / cover;
+            position: relative;
+            @media screen and (max-width: $tablet) {
+                order: 1;
+                height: 200px;
+                margin-top: $elastic-20;
+            }
+        }
+        .download &,
+        .info-tech & {
+            @media screen and (max-width: $tablet) {
+                order: 0;
+                & &__txt{
+                    h2{
+                        text-align: center;
+                    }
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // bloc droit
+    &-right{
+        width: 50%;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            order: 0;
+            .download &,
+            .info-tech & {
+                width: 100%;
+                order: 2;
+            }
+        }
+    }
+
+    // changements contextuels
+    .start-testimonials &,
+    .download &,
+    .info-tech &,
+    .advantages & {
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+        }
+    }
+    .download & {
+        flex-wrap: wrap;
+    }
+    .download &,
+    .info-tech &{ 
+        @media screen and (max-width: $tablet) {
+            .fdr{
+                flex-direction: row;
+                padding-bottom: $elastic-30;
+            }
+            .btn{
+                order: 1;
+            }
+            // le texte et l'image s'alternent
+            #{$block}-left {
+                &>#{$block}:nth-of-type(even).fdr {
+                    flex-direction: row-reverse;
+                }
+            }
+            #{$block}-right {
+                &>#{$block}:nth-of-type(odd).fdr {
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+    }
+}

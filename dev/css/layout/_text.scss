@@ -1,0 +1,24 @@
+h1, h2, h3, h4{
+    font-family: $font_title;
+}
+h1{
+    font-size: $title1-elastic;
+}
+h2{
+    font-size: $title2-elastic;
+    letter-spacing: .05pc;
+    margin-bottom: $elastic-26;
+}
+h3{
+    font-size: $title3-elastic;
+    margin-bottom: $elastic-20;
+}
+h4{
+    font-size: $title4-elastic;
+    margin-bottom: $elastic-10;
+}
+
+.subtitle{
+    font-size: $sub1-elastic;
+    margin: $elastic-10 0;
+}
