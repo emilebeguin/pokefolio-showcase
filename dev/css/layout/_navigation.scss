@@ -1,10 +1,12 @@
-nav{
+nav.menu-bar{
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-        justify-content: center;
+    background: $color_base_light;
+    box-shadow: $color_base_dark 0px 1px 2px 1px;
+    z-index: 9999;
         @media screen and (max-width: $tablet){
             &{
                 transition: 0.8s all ease-in-out;

@@ -10,6 +10,7 @@ body{
 }
 section{
     padding: $elastic-40;
+    overflow: hidden;
     @media screen and (max-width: $tablet) {
         padding: $elastic-10;
     }
@@ -101,3 +102,7 @@ a{
 }
 
 // moved btn to buttons
+
+/* AOS - Animate on scroll library */ 
+
+@import url('https://unpkg.com/aos@next/dist/aos.css');

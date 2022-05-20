@@ -12,12 +12,12 @@
         &:not(.info-tech &){
             width: 100%;
         }
-        .info-tech &{
-            height: 60px; // img hérite de ceci
-            width: 60px;  // img hérite de ceci
-            background: $color_primary_y;
-            border-radius: 999px;
-        }
+        // .info-tech &{
+        //     height: 60px; // img hérite de ceci
+        //     width: 60px;  // img hérite de ceci
+        //     background: $color_primary_y;
+        //     border-radius: 999px;
+        // }
     }
     &__txt{
         text-align: left;
@@ -50,6 +50,7 @@
         }
         .start-testimonials & {
             background: url('../img/LancezVousBox.png') center / cover;
+            border-radius: 6px;
             position: relative;
             @media screen and (max-width: $tablet) {
                 order: 1;

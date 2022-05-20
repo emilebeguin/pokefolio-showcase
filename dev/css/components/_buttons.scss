@@ -6,6 +6,8 @@
     border-radius: 6px;
     color: $color_primary_b;
     background: $color_primary_y;
+    border: 2px solid transparent;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     &:hover{
         color: $color_primary_y;
         background: $color_primary_b;

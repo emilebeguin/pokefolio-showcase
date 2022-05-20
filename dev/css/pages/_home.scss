@@ -1,3 +1,10 @@
+.plongescroll {
+    transition: 2.8s all ease-in-out;
+}
+img:not([alt="Logo"]){
+    border-radius: 6px;
+}
+
 // SECTION HEADER POKEBALL
 // moved to header
 
