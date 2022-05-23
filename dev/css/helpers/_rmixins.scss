@@ -29,9 +29,9 @@ $desktop: 1920px;
 }
 
 // special responsive
-$doc1 : 1593px;
+$doc1 : 1680px;
 
-@mixin desktop {
+@mixin doc1 {
   @media screen and (max-width: $doc1) {
       @content;
   }
