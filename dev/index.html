@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.min.css">
     <title>Pokefolio – A pocket-sized portfolio theme</title>
 </head>
@@ -19,7 +20,7 @@
                     <img src="img/logo-tablet.jpg" alt="Logo Tablet">
                 </a>
             </div>
-
+            
             <ul>
                 <li><a href="index.html">Présentation</a></li>
                 <li><a href="doc.html">Documentation</a></li>
@@ -124,9 +125,35 @@
                 <div class="block-lr-right pdg-30">
                     <div class="testimonials">
                         <h3>Ils ont apprécié...</h3>
-                        <img class="portrait" src="img/testi-avatar.png" alt="super portrait">
-                        <h4>John Doe</h4>
-                        <p>J'aime beaucoup ce thème, il m'a permit de créer un site et d'y exposer mes travaux. Depuis que je l'utilise j'ai beaucoup plus de trafic grâce à son SEO optimisé.</p>
+                        
+                        
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="slide-inside">
+                                        <img class="portrait" src="img/testi-avatar.png" alt="super portrait">
+                                        <h4>John Doe</h4>
+                                        <p>J'aime beaucoup ce thème, il m'a permit de créer un site et d'y exposer mes travaux. Depuis que je l'utilise j'ai beaucoup plus de trafic grâce à son SEO optimisé.</p>
+                                    </div>
+                                </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            
+                            
+                        </div>
+                        
+                        
+                        
                     </div>
                     
                 </div>
@@ -316,18 +343,20 @@
         <img src="img/logosimple-darkbg.png" alt="Logo">
         <p>Copyright &copy;2022</p>
         <button onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Scroll to Top</button>
-
+        
     </div>
 </footer>
 <!-- FOOTER END -->
 
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <script src="js/script.min.js"></script>
 <script src="js/plongescroll.min.js"></script>
 <!-- AOS-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-AOS.init();
+    AOS.init();
 </script>
+
 </body>
 </html>
