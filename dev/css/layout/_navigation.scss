@@ -42,6 +42,10 @@ nav.menu-bar{
             justify-content: center;
             li{
                 padding: 0 8px;
+        @media screen and (max-width: $tablet){
+
+                line-height: 10vh;
+        }
             }
         }
     
