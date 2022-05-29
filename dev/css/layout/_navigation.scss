@@ -9,7 +9,9 @@ nav.menu-bar{
     z-index: 9999;
         @media screen and (max-width: $tablet){
             &{
-                transition: 0.8s all ease-in-out;
+                transition: left .8s ease-in-out;
+                // il faudrait trouver une manière de retarder
+                // le changement de flex-direction
                 position: fixed;
                 top: 0;
                 left: -100%;
@@ -26,6 +28,8 @@ nav.menu-bar{
             }
             &.active{
                 left: 0;
+                flex-direction: column;
+                justify-content: center;
             }
         }
         a{

@@ -10,9 +10,10 @@ body{
 }
 section{
     padding: $elastic-40;
+    background-color: $white;
     overflow: hidden;
     @media screen and (max-width: $tablet) {
-        padding: $elastic-10;
+        padding: $elastic-10 0;
     }
 }
 

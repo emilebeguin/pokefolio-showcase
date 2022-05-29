@@ -1,24 +1,60 @@
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     font-family: $font_title;
 }
-h1{
+
+h1 {
     font-size: $title1-elastic;
 }
-h2{
+
+h2 {
     font-size: $title2-elastic;
     letter-spacing: .05pc;
     margin-bottom: $elastic-26;
 }
-h3{
+
+h3 {
     font-size: $title3-elastic;
     margin-bottom: $elastic-20;
 }
-h4{
+
+h4 {
     font-size: $title4-elastic;
     margin-bottom: $elastic-10;
 }
 
-.subtitle{
+.subtitle {
     font-size: $sub1-elastic;
     margin: $elastic-10 0;
+
+    .header-pokeball & {
+        position: relative;
+        width: max-content;
+        font-weight: normal;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+
+        &::before {
+            background: $white-alt;
+            animation: write 2.5s steps(25) 2.5s forwards;
+            /* Number of steps */
+            width: 100%;
+        }
+
+        &::after {
+            opacity: 1;
+            width: 0.15em;
+            background: black;
+            animation: write 2.5s steps(25) 2.5s forwards, blink 0.75s steps(2) infinite 1.5s;
+        }
+    }
 }
