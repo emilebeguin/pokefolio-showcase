@@ -4,28 +4,15 @@
 img:not([alt="Logo"]){
     border-radius: 6px;
 }
-
-// SECTION HEADER POKEBALL
-// moved to header
-
-//SECTION ADVANTAGES
-// moved to blocks
-
-// SECTION GO AND TESTIMONIALS
-// .start-testimonials{
-
-//     // block moved to block
-//     // btn moved to btn
-// }
-
-// SECTION PACKS
-// moved to packs
-
-// SECTION TECHNICAL INFOS
-// moved to blocks
-
-//SECTION DOWNLOAD
-// moved to blocks
-
-//SECTION DOWNLOAD & SECTION INFO-TECH
-// moved to blocks
+.start-testimonials {
+    .block-lr-right {
+        width: 100%;
+    }
+}
+.testimonials {
+    width: 100%;
+    h3  {
+        margin-top: 10vh;
+        width: 100%;
+    }
+}

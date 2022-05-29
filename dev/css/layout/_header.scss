@@ -2,6 +2,9 @@
 .header-pokeball{
     position: relative;
     // margin-top: $mrg10-elastic;
+    @media screen and (orientation: portrait) {
+        height: 100vh;        
+    }
     &::before {
         content: '';
         position: absolute;
@@ -12,7 +15,7 @@
         margin: calc(-5000px) calc(-5000px);
         aspect-ratio: 1;
         border-radius: 9999px;
-        background: repeating-conic-gradient($white 0% 5%, $white-alt 5% 10%);
+        background: repeating-conic-gradient($color_base_light 0% 5%, $color_primary_p 5% 10%);
         animation: spin 60s linear infinite;
     }
     .wrapper{
@@ -25,7 +28,7 @@
         }
         .wrapper__inside{
             position: absolute;
-            background: radial-gradient($white, rgba(255,255,255,0));
+            background: radial-gradient($color_base_light, rgba(255,255,255,0));
             top: 20%;
             z-index: 1;
             padding-top: $elastic-90;

@@ -44,7 +44,7 @@ h4 {
         }
 
         &::before {
-            background: $white-alt;
+            background: $color_primary_p;
             animation: write 2.5s steps(25) 2.5s forwards;
             /* Number of steps */
             width: 100%;

@@ -12,3 +12,24 @@
     width: 34vw;
     margin: 0 auto;
 }
+
+// .swiper-button-next,
+// .swiper-container-rtl .swiper-button-prev,
+// .swiper-button-prev, 
+// .swiper-container-rtl .swiper-button-next{
+//     background-image: none;
+// }
+
+.swiper-button-next,
+.swiper-button-prev, 
+.swiper-container-rtl .swiper-button-prev,
+.swiper-container-rtl .swiper-button-next{
+    fill: $color_primary_y;
+    &::after {
+        content: '';
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $color_primary_y;
+}

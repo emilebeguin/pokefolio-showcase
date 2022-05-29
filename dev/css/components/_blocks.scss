@@ -2,26 +2,14 @@
     $block: &; // le bloc devient une variable (parce qu'il y a des blocs dans des blocs)
     display: flex;
     justify-content: center;
-    img{
-        width: 100%;
-        &.portrait {
-            max-width: 100px;
-        }
-    }
-    &__img {
-        &:not(.info-tech &){
-            width: 100%;
-        }
-        // .info-tech &{
-        //     height: 60px; // img hérite de ceci
-        //     width: 60px;  // img hérite de ceci
-        //     background: $color_primary_y;
-        //     border-radius: 999px;
-        // }
-    }
     &__txt{
         text-align: left;
         width: 80%;
+        .advantages & {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
         @media screen and (max-width: $tablet) {
             width: 100%;
             // le texte se met à droite au palier tablette
@@ -52,6 +40,20 @@
             background: url('../img/LancezVousBox.png') center / cover;
             border-radius: 6px;
             position: relative;
+            position: relative;
+            &::after {
+                content: '';
+                z-index: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba(0,0,0,0),  $color_base_dark);
+            }
+            * {
+                z-index: 1;
+            }
             @media screen and (max-width: $tablet) {
                 order: 1;
                 height: 200px;
