@@ -1,4 +1,5 @@
 .packs{
+    min-height: 75vh;
     .grid .pack__card:nth-child(2){
         transform: scale(1.2);
     }
@@ -17,6 +18,26 @@
     }
     h3{
         margin: 0;
+    }
+    .pack__card {
+        box-shadow: rgba($color: $color_primary_g, $alpha: .25) 0px 50px 100px -20px, 
+        rgba($color: $color_primary_g, $alpha: .3) 0px 30px 60px -30px;
+        @include transition-fluid;
+        span:not(.bg-red) {
+            &:not(:first-of-type) {
+                box-sizing: border-box;
+                border-top: 2px solid $color_primary_p;
+            }
+            background-color: $color_base_light;
+        }
+    }
+    .grid:hover .pack__card:hover {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        cursor: pointer;
+    }
+    .grid:hover .pack__card:not(:hover) {
+        opacity: .8;
+        transform: scale(.8);
     }
     a{
 color: white;

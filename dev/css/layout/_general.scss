@@ -7,12 +7,17 @@ body{
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 3rem;
+    @media screen and (max-width: $tablet) {
+        padding: 0 1.5rem;
+    }
 }
 section{
     padding: $elastic-40;
+    background-color: $color_base_light;
     overflow: hidden;
     @media screen and (max-width: $tablet) {
-        padding: $elastic-10;
+        padding: $elastic-10 0;
     }
 }
 
@@ -93,12 +98,9 @@ a{
     background-color: white;
 }
 
-.brd-rad-top{
-    border-radius: $elastic-10 $elastic-10 0 0 ;
-}
-
-.brd-rad-bot{
-    border-radius: 0 0 $elastic-10 $elastic-10;
+.brd-rad{
+    border-radius: $elastic-10;
+    overflow: hidden;
 }
 
 // moved btn to buttons

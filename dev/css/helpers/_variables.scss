@@ -14,7 +14,6 @@ $title1-elastic: calc(60px + .60vw);
 $title2-elastic: calc(54px + .54vw);
 $title3-elastic: calc(30px + .30vw);
 $title4-elastic: calc(20px + .20vw);
-$sub1-elastic: calc(30px + .30vw);
 $font-elastic: calc(16px + .16vw);
 $small-elastic: calc(12px + .12vw);
 
@@ -29,3 +28,9 @@ $elastic-40: calc(40px + .40vw);
 $elastic-60: calc(60px + .60vw);
 $elastic-90: calc(90px + .90vw);
 
+$sub1-elastic: calc(14px + .8vw);
+@media screen and (min-width: $medium-screen) {
+    $sub1-elastic: 30px;
+}
+
+$nav-height: 4rem;
