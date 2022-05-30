@@ -1,175 +1,18 @@
-// SECTION HEADER POKEBALL
-.header-pokeball{
-    // margin-top: $mrg10-elastic;
-    .pokeball{
-        margin: 0 auto;
-        background: url('../img/Header.png') top / cover;
-        @media screen and (max-width: $tablet) {
-            padding: 0 20px;
-        }
-        .pokeball-inside{
-            padding-top: $elastic-90;
-            @media screen and (max-width: $tablet) {
-                padding-top: $elastic-60;
-            }
-        }
-        img[alt="Theme thumbnail"]{
-            width: 70%;
-        }
-    }
+.plongescroll {
+    transition: 2.8s all ease-in-out;
 }
-//SECTION ADVANTAGES
-.advantages{
-    @media screen and (max-width: $tablet) {
-        
-        .block-lr{
-            flex-direction: column;
-            .block-lr__txt{
-                width: 100%;
-            }
-            
-            &:nth-of-type(even){
-                .block-lr__txt{
-                    text-align: right;
-                }
-            }
-            
-            &--left{
-                .block-lr__img{
-                    order: 0;
-                }
-                .block-lr__txt{
-                    order: 1;
-                }
-            }
-        }
-    }
+img:not([alt="Logo"]){
+    border-radius: 6px;
 }
-// SECTION GO AND TESTIMONIALS
-.start-testimonials{
-    @media screen and (max-width: $tablet) {
-        .block-lr{
-            flex-direction: column;
-        }
-        .block-lr-left{
-            width: 100%;
-            order: 1;
-            height: 200px;
-            margin-top: $elastic-20;
-        }
-        .block-lr-right{
-            width: 100%;
-            order: 0;
-        }
-    }
-    .block-lr-left{
-        background: url('../img/LancezVousBox.png') center / cover;
-        position: relative;
-    }
-    .btn{
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-// SECTION PACKS
-.packs{
-    .grid .pack__card:nth-child(2){
-        transform: scale(1.2);
-    }
-    .pack__txt-block{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2%;
-        margin-bottom: 30px;
-        @media screen and (max-width: $tablet) {
-            display: flex;
-            justify-content: center;
-            
-            flex-direction: column;
-            
-        }
-    }
-    h3{
-        margin: 0;
-    }
-    .pack__txt{
-        text-align: left;
-        @media screen and (max-width: $tablet) {
-            padding: $elastic-10 0;
-            
-        }
-    }
-}
-// SECTION TECHNICAL INFOS
-.info-tech{
-    @media screen and (max-width: $tablet){
-        
-        .block-lr-left .block-lr:nth-of-type(even){
-            .block-lr__img{
-                order: 1;
-            }
-            .block-lr__txt{
-                order: 0;
-            }
-            
-        }
-        .block-lr-right.odd .block-lr:nth-of-type(odd){
-            .block-lr__img{
-                order: 1;
-            }
-            .block-lr__txt{
-                order: 0;
-            }
-        }
-        
-    }
-    .block-lr__img{
-        height: 60px;
-        width: 60px;
-        background: $color_primary_y;
-        border-radius: 45px;
-    }
-    img{
-        width: 60px;
-        height: 60px;
-    }
-}
-//SECTION DOWNLOAD
-.download{
-    .block-lr{
-        flex-wrap: wrap;
-    }
-}
-.download, .info-tech{ //SECTION DOWNLOAD & SECTION INFO-TECH
-    @media screen and (max-width: $tablet) {
-        
-        .block-lr{
-            flex-direction: column;
-        }
-        .block-lr .fdr{
-            flex-direction: row;
-            padding-bottom: $elastic-30;
-        }
-        .block-lr-left{
-            .block-lr__txt{
-                h2{
-                    text-align: center;
-                }
-                width: 100%;
-            }
-            width: 100%;
-            order: 0;
-            margin-top: $elastic-20;
-        }
-        .block-lr-right{
-            width: 100%;
-            order: 2;
-        }
-        .btn{
-            order: 1;
-            
-        }
+// .start-testimonials {
+//     .block-lr-right {
+//         width: 100%;
+//     }
+// }
+.testimonials {
+    width: 100%;
+    h3  {
+        margin-top: 10vh;
+        // width: 100%;
     }
 }

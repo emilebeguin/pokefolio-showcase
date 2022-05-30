@@ -9,22 +9,33 @@
 </head>
 <body class="page-about">
 
-  <!-- HEADER (NAV) -->
+  <!-- HEADER -->
+    
   <header>
-    <nav class="nav">
+    <nav class="nav menu-bar">
         
         <div class="logo">
-            <a href="index.html"><img src="img/logo-lightbg.png" alt="Logo"></a>
+            <a href="index.html">
+                <img src="img/logo-lightbg.png" alt="Logo">
+                <img src="img/pokefolio-o.svg" alt="Logo Tablet">
+            </a>
         </div>
+        
         <ul>
             <li><a href="index.html">Présentation</a></li>
             <li><a href="doc.html">Documentation</a></li>
             <li><a href="about.html">À propos</a></li>
         </ul>
         
+        <!-- BURGER MENU -->
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
-  </header>
-  <!-- HEADER (NAV) END -->
+</header>
+<!-- HEADER END -->
 
   <!-- MAIN PART -->
   <main class="">
@@ -101,10 +112,11 @@
     <div class="about --top-padding">
       <!-- Texte -->
       <div class="__txt">
-        <h1>A propos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat voluptas expedita. Laboriosam totam, fugiat recusandae ab animi sed. Quasi tempore quaerat corporis voluptates, quam officia dolorem voluptatum. Laudantium, dicta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsam itaque, veniam consectetur sit illo eveniet ipsum officiis reiciendis libero. Porro quaerat error fugiat distinctio recusandae est sequi vel minus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat voluptas expedita. Laboriosam totam, fugiat recusandae ab animi sed. Quasi tempore quaerat corporis voluptates, quam officia dolorem voluptatum. Laudantium, dicta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis odit quam sint ullam, voluptates vero consequatur unde minima aliquid asperiores suscipit officiis, dolor possimus enim sunt, ratione eum nobis cumque?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat voluptas expedita. Laboriosam totam, fugiat recusandae ab animi sed. Quasi tempore quaerat corporis voluptates, quam officia dolorem voluptatum. Laudantium, dicta!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In fuga eaque neque quisquam qui, dicta, accusamus sunt error minus molestias tempore voluptas nemo ab, accusantium harum magnam omnis reiciendis magni!</p>
+        <h1>Notre équipe</h1>
+        <p>Nous sommes une équipe de développeurs formés par Bruxelles Formation, notamment par le légendaire Olivier Céréssia, le célèbre Front-End développeur et webdesigner.</p>
+        <p>Notre équipe est très polyvalente et possède des atouts dans de nombreux domaines, allant du design, à l'innovation, en passant par un code robuste et une productivité sans égal. Nous sommes à l'écoute de toute question, suggestion, ou proposition en ce qui concerne nos services, ou vos besoins et attentes.</p>
+        <p>Nous travaillons avec des partenaires de renom dans l'industrie, qui nous fournissent le matériel et les ressources nécéssaires afin de vous apporter du travail et des services de qualité en tout heure et en tout lieu.</p>
+        <p>Notre support est à l'écoute 24h sur 24, 7 jours sur 7, alors n'hésitez pas à nous faire part de vos pensées, ou de simplement nous laisser un gentil message si le coeur vous en dit !</p>
       </div>
 
 
@@ -120,25 +132,25 @@
         <div class="__logos">
           <!-- single logo -->
           <div class="__single-logo">
-            <img src="img/logos/pepsi.png" alt="logo">
+            <img src="img/logos/wordpress.png" alt="WordPress">
           </div>
           <!-- end single logo -->
 
           <!-- single logo -->
           <div class="__single-logo">
-            <img src="img/logos/rakuten.png" alt="logo">
+            <img src="img/logos/nintendo-red.png" alt="Nintendo">
           </div>
           <!-- end single logo -->
 
           <!-- single logo -->
           <div class="__single-logo">
-            <img src="img/logos/spotify.png" alt="logo">
+            <img src="img/logos/pokemon.png" alt="Pokémon">
           </div>
           <!-- end single logo -->
 
           <!-- single logo -->
           <div class="__single-logo">
-            <img src="img/logos/windows.png" alt="logo">
+            <img src="img/logos/windows.png" alt="Windows">
           </div>
           <!-- end single logo -->
         </div>
@@ -154,7 +166,7 @@
       <!-- texte -->
       <div class="__txt txtbox">
         <h3>Contact</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione eaque praesentium aut, similique earum quidem consectetur non consequatur modi harum, illo impedit, atque dolores obcaecati. Suscipit in quam et aut?</p>
+        <p>Vous avez une question ? Une suggestion ? Un soucis avec le thème ? N'hésitez pas à prendre contact avec nous, que ce soit par téléphone, par email, ou encore à venir nous rendre visite dans nos bureaux !</p>
       </div>
       <!-- texte end -->
 
@@ -264,13 +276,16 @@
   <!-- END OF MAIN -->
 
   <!-- FOOTER -->
-  <footer class="footer bg-blue">
-    <div class="wrapper">
-        <img src="img/logosimple-darkbg.png" alt="Logo">
-        Copyright &copy;2022
-    </div>
+<footer class="footer bg-blue">
+  <div class="footer-inside wrapper">
+      <img src="img/logosimple-darkbg.png" alt="Logo">
+      <p>Copyright &copy;2022</p>
+      <button onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Scroll to Top</button>
+
+  </div>
 </footer>
-  <!-- END FOOTER -->
+<!-- FOOTER END -->
+<script src="js/script.min.js"></script>
   
 </body>
 </html>

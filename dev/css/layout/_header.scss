@@ -1,0 +1,49 @@
+// HEADER POKEBALL SUR LA HOME
+.header-pokeball{
+    position: relative;
+    // margin-top: $mrg10-elastic;
+    @media screen and (orientation: portrait) {
+        height: 100vh;        
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        height: 10000px;
+        margin: calc(-5000px) calc(-5000px);
+        aspect-ratio: 1;
+        border-radius: 9999px;
+        background: repeating-conic-gradient($color_base_light 0% 5%, $color_primary_p 5% 10%);
+        animation: spin 60s linear infinite;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        @media screen and (max-width: $tablet) {
+            padding: 0 20px;
+        }
+        .wrapper__inside{
+            position: absolute;
+            background: radial-gradient($color_base_light, rgba(255,255,255,0));
+            top: 20%;
+            z-index: 1;
+            padding-top: $elastic-90;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (max-width: $tablet) {
+                padding-top: $elastic-60;
+            }
+        }
+        img[alt="Theme thumbnail"]{
+            position: relative;
+            top: -20vh;
+            width: 0%;
+            animation: grow 1s ease-in-out 2s forwards;
+        }
+    }
+}

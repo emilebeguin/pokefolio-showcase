@@ -7,11 +7,17 @@ body{
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 3rem;
+    @media screen and (max-width: $tablet) {
+        padding: 0 1.5rem;
+    }
 }
 section{
     padding: $elastic-40;
+    background-color: $color_base_light;
+    overflow: hidden;
     @media screen and (max-width: $tablet) {
-        padding: $elastic-10;
+        padding: $elastic-10 0;
     }
 }
 
@@ -22,32 +28,6 @@ a{
         color: $color_primary_y;
     }
 }
-// TYPOGRAPHY
-h1, h2, h3, h4{
-    font-family: $font_title;
-}
-h1{
-    font-size: $title1-elastic;
-}
-h2{
-    font-size: $title2-elastic;
-    letter-spacing: .05pc;
-    margin-bottom: $elastic-26;
-}
-h3{
-    font-size: $title3-elastic;
-    margin-bottom: $elastic-20;
-}
-h4{
-    font-size: $title4-elastic;
-    margin-bottom: $elastic-10;
-}
-
-.subtitle{
-    font-size: $sub1-elastic;
-    margin: $elastic-10 0;
-}
-// TYPOGRAPHY END
 
 .df{
     display: flex;
@@ -102,71 +82,10 @@ h4{
     width: 60%;
 }
 
-.block-lr{
-    display: flex;
-    justify-content: center;
-    img{
-        width: 100%;
-    }
-    .block-lr__img:not(.info-tech .block-lr .block-lr__img){
-        width: 100%;
-    }
-        .block-lr__txt{
-            text-align: left;
-            width: 80%;
-            @media screen and (max-width: $tablet) {
-                width: 100%;
-            }
-        }
-        &--left{
-            .block-lr__img{
-                order: 1;
-            }
-            .block-lr__txt{
-                order: 0;
-            }
-        }
-        &-left{
-            width: 50%;
-        }
-        &-right{
-            width: 50%;
-            
-        }
-    }
-    
-    
-    
+// moved block-lr to component '_blocks'
+// moved backgrounds to component '_bg'
+// moved typography to component '_text'
 
-    // BACKGROUNDS
-    .bg-yellow{
-        background-color: $color_primary_y;
-    }
-    .bg-gray{
-        background-color: $color_primary_g;
-    }
-    .bg-blue{
-        background-color: $color_primary_b;
-        color: $color_base_light;
-    }
-    .bg-orange{
-        background-color: $color_primary_o;
-    }
-    .bg-red{
-        background-color: $color_primary_r;
-        color: $color_base_light;
-    }
-    .bg-pastel{
-        background-color: $color_primary_p;
-    }
-    
-    .bg-gradient-dark{
-        background: linear-gradient(90deg, rgba(6,31,54,1) 0%, rgba(30,52,70,1) 35%);
-        color: $color_base_light;
-    }
-    // BACKGROUNDS END
-    
-    
 .brd-b-side{
     border-bottom: 1px solid $color_primary_g;
     border-left: 1px solid $color_primary_g;
@@ -179,17 +98,13 @@ h4{
     background-color: white;
 }
 
-.brd-rad-top{
-    border-radius: $elastic-10 $elastic-10 0 0 ;
+.brd-rad{
+    border-radius: $elastic-10;
+    overflow: hidden;
 }
 
-.brd-rad-bot{
-    border-radius: 0 0 $elastic-10 $elastic-10;
-}
+// moved btn to buttons
 
+/* AOS - Animate on scroll library */ 
 
-.btn--yellow-float{
-    @media screen and (max-width: $tablet) {
-        display: none;
-    }
-}
+@import url('https://unpkg.com/aos@next/dist/aos.css');

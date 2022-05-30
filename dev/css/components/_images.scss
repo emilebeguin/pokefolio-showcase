@@ -1,0 +1,27 @@
+img {
+    &.slightly-darkened {
+        filter: brightness(0.98);
+    }
+    .block-lr & {
+        max-width: 100%;
+        &.portrait {
+            max-width: 100px;
+            border-radius: 99px;
+        }
+        &__img {
+            &:not(.info-tech &){
+                width: 100%;
+                @media screen and (max-width: $tablet) {
+                    max-width: 50vw;
+                    margin: auto;
+                }
+            }
+            // .info-tech &{
+            //     height: 60px; // img hérite de ceci
+            //     width: 60px;  // img hérite de ceci
+            //     background: $color_primary_y;
+            //     border-radius: 999px;
+            // }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.bg-yellow{
+    background-color: $color_primary_y;
+}
+.bg-gray{
+    background-color: $color_primary_g;
+}
+.bg-blue{
+    background-color: $color_primary_b;
+    color: $color_base_light;
+}
+.bg-orange{
+    background-color: $color_primary_o;
+}
+.bg-red{
+    background-color: $color_primary_r;
+    color: $color_base_light;
+}
+.bg-pastel{
+    background-color: $color_primary_p;
+}
+
+.bg-gradient-dark{
+    background: linear-gradient(90deg, rgba(6,31,54,1) 0%, rgba(30,52,70,1) 35%);
+    color: $color_base_light;
+}
+    

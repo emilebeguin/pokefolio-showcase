@@ -6,6 +6,10 @@
     border-radius: 6px;
     color: $color_primary_b;
     background: $color_primary_y;
+    border: 2px solid transparent;
+    box-shadow: rgb(50 50 50 / 24%) 0px 3px 8px;
+    @include transition-fluid;
+    cursor: pointer;
     &:hover{
         color: $color_primary_y;
         background: $color_primary_b;
@@ -15,5 +19,22 @@
     // .bg-blue &{
         
         // }
+    &--yellow-float{
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
     }
-    
+    .start-testimonials & {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// Button Download Float
+.btn--yellow-float{
+    z-index: 99;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
